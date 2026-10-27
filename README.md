@@ -1,59 +1,188 @@
-# InsightFlow — E-Commerce Customer Intelligence & Business Analytics
+# 🛒 E-Commerce Customer Intelligence & Business Analytics
 
-## Project Overview
+An end-to-end data analytics project using the **Brazilian E-Commerce Public Dataset by Olist** to explore sales performance, customer behavior, delivery operations, and customer satisfaction through Python, SQL, and Power BI.
 
-InsightFlow is an e-commerce analytics project that uses SQL and PostgreSQL to analyze sales performance, monthly trends, delivery reliability, customer satisfaction, and regional delivery patterns.
+The project demonstrates a complete analytics workflow, from data understanding and cleaning to exploratory analysis, SQL-based business queries, dashboard development, and actionable business insights.
 
-The goal is to turn raw e-commerce data into actionable business insights that can support better operational decisions and customer experience improvements.
+---
 
-## Business Questions
+## 📌 Project Overview
 
-This project explores the following questions:
+E-commerce businesses generate large amounts of data through orders, payments, products, customers, and delivery operations. Turning this data into meaningful insights helps businesses understand their performance and identify opportunities for improvement.
 
-1. What are the overall sales, order volume, and average order value?
-2. Which month recorded the highest sales and order volume?
-3. What percentage of orders were delivered late?
-4. What is the average customer review score?
-5. How do customer review scores differ between late and early/on-time orders?
-6. Which Brazilian customer states have the highest late-delivery rates?
+This project analyzes Olist e-commerce data to answer business questions such as:
 
-## Tools and Technologies
+- How are sales performing over time?
+- Which product categories contribute to sales?
+- How do delivery delays affect customer satisfaction?
+- How does customer satisfaction relate to the overall delivery experience?
+- How does business performance vary across Brazilian states?
+- Which key performance indicators can help monitor e-commerce operations?
 
-- **PostgreSQL** — querying and analyzing data
-- **pgAdmin** — executing SQL queries and reviewing results
-- **Visual Studio Code** — writing and organizing SQL scripts and project documentation
-- **Python and pandas** — data preparation and database loading
+The objective is to transform raw transactional data into meaningful business insights using data analytics and visualization tools.
 
-## Key Findings
+## 🎯 Project Objectives
 
-- **Total sales:** R$15,442,699.01
-- **Total unique orders:** 96,897
-- **Average order value:** R$159.37
-- **Peak sales month:** November 2017, with R$1,150,227.46 in sales
-- **Early/on-time delivery rate:** 91.89%
-- **Late delivery rate:** 8.11%
-- **Average review score:** 4.03 out of 5
-- **Average review score for late orders:** 2.56 out of 5
-- **Highest regional late-delivery rate:** Alagoas (AL), at 23.72%
+- Understand the structure and quality of the source data.
+- Clean and prepare datasets for analysis.
+- Integrate multiple datasets into a consolidated analytical dataset.
+- Perform exploratory data analysis to identify trends and patterns.
+- Use SQL to answer business-oriented questions.
+- Build an interactive Power BI dashboard.
+- Communicate findings through business-focused reports and visualizations.
 
-## Business Recommendations
+## 🧰 Tools & Technologies
 
-1. Investigate the causes of late deliveries and identify potential operational improvements.
-2. Examine regional delivery performance, particularly in states with high late-delivery rates.
-3. Monitor customer reviews alongside delivery performance.
-4. Investigate demand patterns around November 2017 to support future planning.
+| Tool | Purpose |
+|---|---|
+| Python | Data cleaning, transformation, and exploratory analysis |
+| Pandas | Data manipulation and analysis |
+| Jupyter Notebook | Organizing and documenting the analytical workflow |
+| SQL | Business queries, KPI analysis, and performance investigation |
+| PostgreSQL | Database querying and SQL integration |
+| Power BI | Interactive dashboard development and visualization |
+| Git & GitHub | Version control and project documentation |
 
-## Project Structure
+## 📂 Project Structure
 
-- `SQL/` — SQL scripts for business analysis
-- `Reports/` — business findings and recommendations
-- `notebook/` — Jupyter notebooks used during analysis
-- `cleaned_data/` — cleaned data files, if included in the project
+```text
+ecom-insights/
+│
+├── notebook/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_Data_Integration_Feature_Engineering.ipynb
+│   ├── 04_EDA_Business_Analysis.ipynb
+│   └── 05_SQL_Integration.ipynb
+│
+├── SQL/
+│   ├── 01_business_kpis.sql
+│   ├── 02_sales_trends.sql
+│   ├── 03_delivery_performance.sql
+│   ├── 04_customer_satisfaction.sql
+│   ├── 05_delivery_vs_reviews.sql
+│   └── 06_delivery_by_state.sql
+│
+├── PowerBI Dashboard/
+│   ├── Olist_Ecommerece_dashboard_.pbix
+│   └── screenshots/
+│
+├── Reports/
+│   └── business_findings.md
+│
+├── Raw Data/
+│
+├── cleaned_data/
+│
+├── .gitignore
+└── README.md
+```
 
-## Conclusion
+**Note:** The raw and cleaned CSV datasets are not included in this GitHub repository. Dataset access links will be added here later.
 
-InsightFlow demonstrates how SQL-based analysis can help identify business performance patterns and potential areas for improvement in e-commerce operations.
+## 🔄 Project Workflow
 
-The findings show an association between late deliveries and lower customer review scores. Further investigation is needed to determine the causes of delivery delays and validate potential interventions.
+### 1. Data Understanding
+- Examined the source datasets and their structure.
+- Identified relevant tables and fields.
+- Established an understanding of the available business information.
 
-*Note: Sales figures, order counts, and percentages are based on the current dataset and the definitions used in the SQL analysis.*
+### 2. Data Cleaning
+- Prepared the datasets for analysis.
+- Addressed data-quality requirements during preprocessing.
+- Organized the data for subsequent integration and analysis.
+
+### 3. Data Integration & Feature Engineering
+- Combined relevant datasets to create a consolidated analytical dataset.
+- Prepared additional analytical features where required.
+- Structured the data for business analysis and reporting.
+
+### 4. Exploratory Data Analysis
+- Investigated sales trends and business performance.
+- Analyzed customer satisfaction and delivery performance.
+- Explored product and geographic patterns.
+- Identified findings relevant to e-commerce operations.
+
+### 5. SQL Analysis
+Used SQL queries to investigate key business areas, including:
+
+- Business KPIs
+- Sales trends
+- Delivery performance
+- Customer satisfaction
+- Delivery performance versus customer reviews
+- Delivery performance by state
+
+### 6. Power BI Dashboard
+Developed a Power BI dashboard to present business performance and analytical findings through visualizations.
+
+The Power BI project file and dashboard screenshots are available in the `PowerBI Dashboard/` directory.
+
+## 📊 Dashboard Preview
+
+Explore the dashboard screenshots in the repository:
+
+**Folder:** `PowerBI Dashboard/screenshots/`
+
+The dashboard presents business information through visual summaries to support the investigation of sales, delivery operations, and customer-related performance.
+
+## 💡 Business Analysis
+
+The project investigates several business dimensions:
+
+| Business Area | Analytical Focus |
+|---|---|
+| Sales Performance | Revenue trends and business KPIs |
+| Product Analysis | Sales contribution across product categories |
+| Delivery Operations | Delivery performance and delays |
+| Customer Satisfaction | Customer review scores and satisfaction patterns |
+| Geographic Analysis | Differences in delivery performance across states |
+| Operational Insights | Relationships between delivery experience and customer reviews |
+
+Detailed findings are documented in [`Reports/business_findings.md`](Reports/business_findings.md).
+
+## 📁 Dataset
+
+This project uses the **Brazilian E-Commerce Public Dataset by Olist**, which contains information about e-commerce orders and related business activities.
+
+**Original dataset:** [Olist Brazilian E-Commerce Dataset on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+The raw and cleaned CSV files are stored locally and excluded from the repository to keep the GitHub project manageable.
+
+*Direct links to the raw datasets and cleaned master dataset will be added here later.*
+
+## 🚀 How to Explore the Project
+
+1. Clone or download this repository.
+2. Review the notebooks in the `notebook/` directory to understand the analytical workflow.
+3. Explore the SQL scripts in the `SQL/` directory.
+4. Read the business findings in `Reports/business_findings.md`.
+5. Open the Power BI screenshots to review the dashboard visuals.
+6. To reproduce the analysis, obtain the required source data and configure the file paths and database connection settings for your environment.
+
+**Requirements:** Python with Jupyter Notebook and Pandas, PostgreSQL for the database-related workflow, and Power BI Desktop to open the `.pbix` file.
+
+## 📈 Key Takeaways
+
+This project demonstrates practical experience with:
+
+- End-to-end data analytics workflows.
+- Data cleaning, integration, and feature engineering.
+- Exploratory data analysis using Python.
+- SQL-based business analysis.
+- Customer satisfaction and delivery performance analysis.
+- Power BI dashboard development.
+- Translating analytical questions into business-focused findings.
+- Documenting and organizing a data analytics project using GitHub.
+
+## 👤 Author
+
+**Ayush Kumar Dhall**
+
+Aspiring Data Analyst | Python | SQL | Power BI | Data Analytics
+
+[GitHub Profile](https://github.com/ayushkumardhall55-eng)
+
+---
+
+⭐ If you find
