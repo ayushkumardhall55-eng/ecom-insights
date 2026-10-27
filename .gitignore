@@ -1,0 +1,22 @@
+# Exclude raw datasets
+/Raw Data/*.csv
+
+# Exclude cleaned datasets
+/cleaned_data/*.csv
+
+# Exclude Python cache files
+__pycache__/
+*.py[cod]
+
+# Exclude Jupyter checkpoint files
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Exclude environment and secret files
+.env
+.venv/
+venv/
+
+# Exclude operating system files
+.DS_Store
+Thumbs.db
