@@ -183,6 +183,3 @@ Aspiring Data Analyst | Python | SQL | Power BI | Data Analytics
 
 [GitHub Profile](https://github.com/ayushkumardhall55-eng)
 
----
-
-⭐ If you find
